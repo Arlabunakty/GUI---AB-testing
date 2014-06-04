@@ -103,7 +103,7 @@
                                     <div class="form-group">
                                         <p class="form-control-static treatment">Current page <span class="glyphicon glyphicon-remove red-remove"></span></p>
                                         <p class="form-control-static treatment">Big Sign up button <span class="glyphicon glyphicon-remove red-remove"></span></p>
-                                        <button class="btn btn-success" type="button"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Add treatment</button>
+                                        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addTreatment"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Add treatment</button>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -115,7 +115,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
-                                                <input class="form-control" type="number">
+                                                <input class="form-control" type="number" min="0">
                                             </div>
                                         </div>
                                     <div class="row">
@@ -189,6 +189,34 @@
 
 </div>
 <!-- /#wrapper -->
+
+<!-- Modal -->
+<div class="modal fade" id="addTreatment" tabindex="-1" role="dialog" aria-labelledby="addTreatmentLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addTreatmentLabel">Add treatment</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label class="">Treatment name:</label>
+                        <input class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Core Scripts - Include with every page -->
 <script src="js/jquery-1.10.2.js"></script>
