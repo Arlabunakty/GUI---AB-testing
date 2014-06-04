@@ -28,3 +28,14 @@
 .col-18 {
     width: 18%;
 }
+
+.btn-create-set {
+    width: 150px;
+}
+
+
+@media(max-width:767px){
+    .dropdown-menu-caption {
+        display: none;
+    }
+}
