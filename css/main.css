@@ -43,3 +43,12 @@
 .hiddenExperiments.in {
     display: table-row;
 }
+
+.col-centered {
+    .center-block();
+    float : none;
+}
+
+.panel-no-border {
+    border: 0;
+}
