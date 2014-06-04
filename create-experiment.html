@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Experiment</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 5px">
+    <div class="navbar-header">
+        <ul class="breadcrumb">
+
+            <li><a href="#">Home</a></li>
+
+            <li>Experiments</li>
+
+        </ul>
+
+
+    </div>
+    <!-- /.navbar-header -->
+
+    <ul class="nav navbar-top-links navbar-right">
+        <!-- /.dropdown -->
+        <li>
+            <a href="#">
+                <i class="fa fa-tasks fa-fw"></i><i class="dropdown-menu-caption">Experiments</i>
+            </a>
+        </li>
+        <!-- /.dropdown -->
+
+        <!-- /.button -->
+        <li>
+            <a href="#">
+                <i class="fa fa-users fa-fw"></i><i class="dropdown-menu-caption">Users</i></i>
+            </a>
+            <!-- /.button-users -->
+        </li>
+        <!-- /.button -->
+
+        <!-- /.button -->
+        <li>
+            <a href="#">
+                <i class="fa fa-wrench fa-fw"></i><i class="dropdown-menu-caption">Admin</i></i>
+            </a>
+            <!-- /.button-users -->
+        </li>
+        <!-- /.button -->
+    </ul>
+    <!-- /.navbar-top-links -->
+</nav>
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+            </div>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form class="" role="form">
+                                <div class="form-group">
+                                    <label class="">Experiment name:</label>
+                                    <input class="form-control" placeholder="E.g. New home page">
+                                </div>
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea class="form-control" rows="4">We are testing 3 versions of a home page to see if we can drive up the convention rate by 3% or more</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label >Treatments</label>
+                                    <div class="form-group">
+                                        <p class="form-control-static treatment">Current page <span class="glyphicon glyphicon-remove red-remove"></span></p>
+                                        <p class="form-control-static treatment">Big Sign up button <span class="glyphicon glyphicon-remove red-remove"></span></p>
+                                        <button class="btn btn-success" type="button"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Add treatment</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Run until</label>
+                                        <div class="row">
+                                            <div class="col-sm-3 col-18">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" value="">Probability >=</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input class="form-control" type="number">
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-18">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">User participated </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input class="form-control" type="number" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-18">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Expiration date </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input class="form-control" type="date" placeholder="E.g. New home page">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Radio Buttons</label>
+
+                                    <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option1" checked>Random select
+                                            </label>
+                                    </div>
+
+                                    <div class="row">
+                                            <div class="col-sm-2">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" value="option2">Specify Set
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <select class="form-control">
+                                                    <option>Washington DC males</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <button class="brn btn-success form-control"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Create set</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <button type="submit" class="btn btn-primary">Submit Button</button>
+                                <button type="reset" class="btn btn-default">Reset Button</button>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Core Scripts - Include with every page -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+<!-- Page-Level Plugin Scripts - Dashboard -->
+<script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+<script src="js/plugins/morris/morris.js"></script>
+
+<!-- SB Admin Scripts - Include with every page -->
+<script src="js/sb-admin.js"></script>
+
+<!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
+<script src="js/demo/dashboard-demo.js"></script>
+
+</body>
+
+</html>

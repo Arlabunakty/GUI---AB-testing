@@ -1,0 +1,30 @@
+.dropdown-menu-caption {
+    margin: 0px 10px 0px 10px;
+}
+
+.page-wrapper {
+    margin-left: 0px;
+}
+
+.breadcrumb {
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.red-remove {
+    color: red;
+    cursor: pointer;
+}
+
+.treatment {
+    margin-bottom: 10px;
+}
+
+.empty-page-header {
+    margin-top: 0px;
+    border-bottom: 0px;
+}
+
+.col-18 {
+    width: 18%;
+}
