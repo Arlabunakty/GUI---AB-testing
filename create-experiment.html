@@ -11,7 +11,6 @@
     <!-- Core CSS - Include with every page -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/datepicker.css" rel="stylesheet">
-    <link href="css/bootstrap-tagsinput.css">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Page-Level Plugin CSS - Dashboard -->
@@ -30,17 +29,11 @@
 <div id="wrapper">
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 5px">
-    <div class="navbar-header">
-        <ul class="breadcrumb">
+    <div class="container-fluid">
 
-            <li><a href="#">Home</a></li>
-
-            <li>Experiments</li>
-
-        </ul>
-
-
-    </div>
+            <div class="navbar-header">
+                <div class="logo">System name</div>
+            </div>
     <!-- /.navbar-header -->
 
     <ul class="nav navbar-top-links navbar-right">
@@ -71,142 +64,140 @@
         <!-- /.button -->
     </ul>
     <!-- /.navbar-top-links -->
+    </div>
 </nav>
 
 <div id="page-wrapper">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
+            <ul class="breadcrumb">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Experiments</a> / Create Experiment</li>
+
+            </ul>
+            <div class="page-header">
+                <h1>Create Experiment</h1>
+            </div>
         </div>
-        <!-- /.col-lg-12 -->
+        <!-- /.col-md-12 -->
     </div>
     <!-- /.row -->
     <div class="row">
-        <div class="col-md-6 center-block col-centered">
-            <div class="panel panel-default panel-no-border">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-12">
+        <div class="col-md-7">
+
                             <form class="form-horizontal" role="form">
-                                <div class="row form-group">
-                                    <label class="col-md-3 control-label">Experiment name:</label>
-                                    <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Experiment name:</label>
+                                    <div class="col-md-8">
                                         <input class="form-control" placeholder="E.g. New home page">
                                     </div>
                                 </div>
-
-                                <div class="row form-group">
-
-                                        <label class="col-md-3 control-label">Description</label>
-                                        <div class="col-md-9">
-                                            <textarea class="form-control" rows="4">We are testing 3 versions of a home page to see if we can drive up the convention rate by 3% or more</textarea>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Description</label>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" rows="4">We are testing 3 versions of a home page to see if we can drive up the convention rate by 3% or more</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Treatments</label>
+                                    <div class="col-md-8">
+                                        <span class="label label-default">Current page <span class="glyphicon glyphicon-remove white-remove"></span></span>
+                                        <span class="label label-default">Big Sign up button <span class="glyphicon glyphicon-remove white-remove"></span></span>
+                                        <span class="label label-default">Big Sign up button <span class="glyphicon glyphicon-remove white-remove"></span></span>
+                                        <span class="label label-default">Current page <span class="glyphicon glyphicon-remove white-remove"></span></span>
+                                        <span class="label label-default">Big Sign up button <span class="glyphicon glyphicon-remove white-remove"></span></span>
+                                        <span class="label label-default">Big Sign up button <span class="glyphicon glyphicon-remove white-remove"></span></span>
+                                        <div class="clearfix"><br>
+                                        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addTreatment"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Add treatment</button>
                                         </div>
-
+                                    
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Run until</label>
+                                    <div class="col-md-3">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""><em>Probability >=</em></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="form-control" type="number" min="0">
+                                    </div>
                                 </div>
 
-                                    <div class="row form-group">
-                                            <label class="col-md-3 control-label">Treatments</label>
-
-                                            <div class="col-md-9">
-                                                <!--<div class="label label-default"><span class="" style="padding-left: 10px;"></span> </div>-->
-
-                                                    <p class="form-control-static treatment" data-placement="top" title="Treatment that .............">Current page <span class="glyphicon glyphicon-remove red-remove"></span></p>
-                                                    <p class="form-control-static treatment" data-placement="top" title="Treatment that .............">Big Sign up button <span class="glyphicon glyphicon-remove red-remove"></span></p>
-
-
-                                                <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addTreatment"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Add treatment</button>
-                                            </div>
-                                    </div>
-
-                                    <!--<div class="row form-group">-->
-                                        <!--<div class="col-md-offset-3 col-md-12">-->
-                                           <!---->
-                                        <!--</div>-->
-                                    <!--</div>-->
-
-
-                                    <div class="row form-group">
-                                        <label class="col-md-3 control-label">Run until</label>
-
-                                            <div class="col-md-3">
-                                                <div class="checkbox">
-                                                    <label><input type="checkbox" value=""><em>Probability >=</em></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-3">
-                                                <input class="form-control" type="number" min="0">
-                                            </div>
-                                    </div>
-
-                                    <div class="row form-group">
-                                        <div class="col-md-3 col-md-offset-3">
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" value=""><em>User participated</em></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <input class="form-control" type="number" min="0">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label"> </label>
+                                    <div class="col-md-3">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""><em>User participated</em></label>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <input class="form-control" type="number" min="0">
+                                    </div>
+                                </div>
 
-                                    <div class="row form-group">
-                                        <div class="col-md-3 col-md-offset-3">
-                                            <div class="checkbox">
-                                                <label><input  type="checkbox" value=""><em>Expiration date</em></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <input class="form-control datepicker" type="text">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label"> </label>
+                                    <div class="col-md-3">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""><em>Expiration date</em></label>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <input class="form-control datepicker" type="text" >
+                                    </div>
+                                </div>
 
 
-                                <div class="row form-group">
-                                    <label class="col-md-3 control-label">Users</label>
-                                    <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Radio Buttons</label>
+                                    <div class="col-md-3">
                                         <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" value="option1" checked>Random select
-                                                </label>
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option1" checked>Random select
+                                            </label>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                       
+                                    </div>
                                 </div>
-                                    <div class="row form-group">
-                                            <div class="col-md-3 col-md-offset-3">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" name="optionsRadios" value="option2">Specify Set
-                                                    </label>
 
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option>Washington DC males</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button class="brn btn-success form-control btn-create-set"><span class="glyphicon glyphicon-plus" style="padding-right: 10px"></span>Create set</button>
-                                            </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label"> </label>
+                                    <div class="col-md-3">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" value="option2">Specify Set
+                                            </label>
                                         </div>
-        <div class="row ">
-                            <div class="col-md-3 center-block col-centered row">
+                                    </div>
+                                    <div class="col-md-3">
+                                       <select class="form-control">
+                                            <option>Washington DC males</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <button class="brn btn-success form-control btn-create-set"><span class="glyphicon glyphicon-plus" style="padding-right: 5px"></span>Create set</button>
+                                    </div>
+                                </div>
 
-                                <button type="submit" class="btn btn-primary" >Submit</button>
-                                <a  href="index.html" class="btn btn-danger" >Cancel</a>
-                            </div>
-        </div>
+                                <hr>
+                                <div class="clearfix">
+
+                                <button type="submit" class="btn btn-primary pull-right">Submit Button</button>&nbsp;
+                                <button type="reset" class="btn btn-default ">Reset Button</button>
+
+                                </div>
+
                             </form>
-                        </div>
-                        <!-- /.col-lg-6 (nested) -->
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-12 -->
+
+              
+        <!-- /.col-md-12 -->
     </div>
     <!-- /.row -->
 </div>
@@ -247,7 +238,6 @@
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
-<script src="js/bootstrap-tagsinput.js"></script>
 <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
 <!-- Page-Level Plugin Scripts - Dashboard -->

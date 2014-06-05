@@ -27,17 +27,11 @@
 
     <div id="wrapper">
 
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 5px">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
+            <div class="container-fluid">
+
             <div class="navbar-header">
-                <ul class="breadcrumb">
-
-                    <li><a href="#">Home</a></li>
-
-                    <li>Experiments</li>
-
-                </ul>
-
-
+                <div class="logo">System name</div>
             </div>
             <!-- /.navbar-header -->
 
@@ -174,13 +168,22 @@
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
+            </div>
         </nav>
 
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
+                    <ul class="breadcrumb">
+
+                        <li><a href="#">Home</a></li>
+
+                        <li>Experiments</li>
+
+                    </ul>
+
                     <div class="page-header">
-                        <a href="create-experiment.html" class="btn btn-primary">Create Experiment</a>
+                        <a href="create-experiment.html" class="btn btn-warning btn-lg">Create Experiment</a>
                     </div>
                 </div>
                 <!-- /.col-lg-12 -->
@@ -281,7 +284,7 @@
                                 </table>
                             </div>
                             <!-- /.table-responsive -->
-                            <button class="btn btn-default btn-block" data-toggle="collapse" data-text="Collapse Experiments" data-target=".hiddenExperiments">View All Experiments</button>
+                            <button class="btn btn-primary btn-block" data-toggle="collapse" data-text="Collapse Experiments" data-target=".hiddenExperiments">View All Experiments</button>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -289,7 +292,11 @@
                 </div>
                 <!-- /.col-lg-8 -->
                 <div class="col-lg-6">
+                    
                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Users in experiments
+                        </div>
                         <div class="panel-body">
                             <div id="morris-area-chart"></div>
                         </div>
